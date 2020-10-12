@@ -9,6 +9,17 @@ namespace HomeWork
     /// </summary>
     class Support
     {
+        public static long AskWeight()
+        {
+            Console.Write("Weight: ");
+            return long.Parse(Console.ReadLine());
+        }
+
+        public static int AskHeight()
+        {
+            Console.Write("Height: ");
+            return int.Parse(Console.ReadLine());
+        }
 
         /// <summary>
         /// Print ${message} to console and return value from user

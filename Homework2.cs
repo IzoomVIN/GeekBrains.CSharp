@@ -96,5 +96,42 @@ namespace HomeWork
             return false;    
         }
 
+        /// <summary>
+        /// <para>5</para>
+        /// <para>Написать программу, которая запрашивает массу и рост человека, вычисляет его индекс массы и сообщает:</para>
+        /// <para>а) Нужно ли человеку похудеть, набрать вес или всё в норме.</para>
+        /// <para>б) *Рассчитать, на сколько кг похудеть или сколько кг набрать для нормализации веса.</para>
+        /// </summary>
+        public void BMIwithRec()
+        {
+            double weight = AskWeight();
+            double height = (double) AskHeight()/100;
+            double bmi = weight / Math.Pow(height, 2);
+
+            String result = $"BMI = {bmi:F1};";
+
+            if (bmi < 18.5)
+            {
+                result += " Lack of weight.";
+                result += $"\nRecommendation: gain {GetWeightDelta(weight, height, 19):F1} kg of weight";
+            } else if (bmi > 24.9)
+            {
+                result += " Overweight";
+                result += $"\nRecommendation: lose weight by {GetWeightDelta(weight, height, 24):F1} kg.";
+            } else
+            {
+                result += " Normal weight";
+            }
+
+            Console.WriteLine(result);
+
+            Pause();
+        }
+
+        private double GetWeightDelta(double weight, double height, double bmi)
+        {
+            return Math.Abs((bmi * Math.Pow(height, 2)) - weight);
+        }
+
     }
 }

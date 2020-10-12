@@ -9,19 +9,6 @@ namespace HomeWork
     /// </summary>
     class HomeWork1
     {
-
-        private long AskWeight() 
-        {
-            Console.Write("Weight: ");
-            return long.Parse(Console.ReadLine());
-        }
-
-        private int AskHeight() 
-        {
-            Console.Write("Height: ");
-            return int.Parse(Console.ReadLine());
-        }
-
         /// <summary>
         /// <para>1</para>
         ///<para>Написать программу «Анкета».

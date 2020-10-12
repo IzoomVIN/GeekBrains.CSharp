@@ -12,7 +12,9 @@
             //System.Console.WriteLine($"Number of digits = {hw.NumberOfDigitsInNumber(number)}");
             //Support.Pause();
 
-            if(hw.LogIn()) hw.SumOfOddNumbers();
+            //if(hw.LogIn()) hw.SumOfOddNumbers();
+
+            hw.BMIwithRec();
         }
     }
 }
