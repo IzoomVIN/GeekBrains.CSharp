@@ -9,6 +9,18 @@ namespace HomeWork
     /// </summary>
     class Support
     {
+
+        /// <summary>
+        /// Print ${message} to console and return value from user
+        /// </summary>
+        /// <param name="message">text for console</param>
+        /// <returns></returns>
+        public static String GetFromUser(String message)
+        {
+            Console.WriteLine(message);
+            return Console.ReadLine();
+        }
+
         public static void Print(string msg, int x, int y)
         {
             Console.SetCursorPosition(x, y);
