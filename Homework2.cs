@@ -128,6 +128,82 @@ namespace HomeWork
             Pause();
         }
 
+        /// <summary>
+        /// <para>6</para>
+        /// <para>*Написать программу подсчета количества «хороших» чисел в диапазоне от 1 до 1 000 000 000.</para>
+        /// <para>«Хорошим» называется число, которое делится на сумму своих цифр.</para>
+        /// <para>Реализовать подсчёт времени выполнения программы, используя структуру DateTime.</para>
+        /// </summary>
+        public void GoodNumbers()
+        {
+            int count = 0;
+            DateTime start = new DateTime();
+            for (int i = 1; i <= 1000000000; i++)
+            {
+                int sum = 0;
+                int currentNum = i;
+                while(currentNum > 0)
+                {
+                    sum += currentNum % 10;
+                    currentNum /= 10;
+                }
+
+                if (i % sum == 0)
+                {
+                    count++;
+                }
+            }
+
+            DateTime end = new DateTime();
+            Console.WriteLine($"count = {count}");
+            Console.WriteLine($"time = {start - end}");
+            Pause();
+        }
+
+        /// <summary>
+        /// <para>7a</para>
+        /// <para>Разработать рекурсивный метод, который выводит на экран числа от a до b(a<b).</para>
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        public int AllNumFromAtoB(int a, int b)
+        {
+            if (a < b)
+            {
+                Console.Write($"{a}..");
+                return AllNumFromAtoB(a + 1, b);
+            }
+            else
+            {
+                Console.Write($"{a}");
+            }
+
+            Pause();
+            return 0;
+        }
+
+        /// <summary>
+        /// б) *Разработать рекурсивный метод, который считает сумму чисел от a до b.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="sum"></param>
+        public int SumNumFromAtoB(int a, int b, int sum = 0)
+        {
+            if (a < b)
+            {
+                sum += a;
+                return SumNumFromAtoB(a + 1, b, sum);
+            }
+            else
+            {
+                Console.Write($"sum = {sum+a}");
+            }
+
+            Pause();
+            return 0;
+        }
+
         private double GetWeightDelta(double weight, double height, double bmi)
         {
             return Math.Abs((bmi * Math.Pow(height, 2)) - weight);

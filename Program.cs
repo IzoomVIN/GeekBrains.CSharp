@@ -14,7 +14,11 @@
 
             //if(hw.LogIn()) hw.SumOfOddNumbers();
 
-            hw.BMIwithRec();
+            //hw.BMIwithRec();
+            //hw.GoodNumbers();
+
+            hw.AllNumFromAtoB(2, 4);
+            hw.SumNumFromAtoB(3, 6);
         }
     }
 }
