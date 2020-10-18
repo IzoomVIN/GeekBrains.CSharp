@@ -4,14 +4,21 @@
     {
         static void Main(string[] args)
         {
-            var hw = new HomeWork1();
-            //hw.Form();
-            //hw.BMI();
+            var hw = new Homework2();
 
-            //hw.Distance();
-            //hw.SwapNumbersWithoutVar();
+            //hw.MinOfThree();
 
-            hw.MyInformation();
+            //int number = int.Parse(Support.GetFromUser("Enter number:"));
+            //System.Console.WriteLine($"Number of digits = {hw.NumberOfDigitsInNumber(number)}");
+            //Support.Pause();
+
+            //if(hw.LogIn()) hw.SumOfOddNumbers();
+
+            //hw.BMIwithRec();
+            //hw.GoodNumbers();
+
+            hw.AllNumFromAtoB(2, 4);
+            hw.SumNumFromAtoB(3, 6);
         }
     }
 }
