@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace HomeWork
 {
@@ -14,6 +11,7 @@ namespace HomeWork
     {
         private int[] array;
         public int Size { get; private set; }
+        private int index;
 
         public int this[int index]
         {
@@ -21,6 +19,9 @@ namespace HomeWork
             set => array[index] = value;
         }
 
+        /// <summary>
+        /// <para>Return copy of array as int[]</para>
+        /// </summary>
         public int[] Array
         {
             get
@@ -90,6 +91,26 @@ namespace HomeWork
             }
         }
 
+        public MyList()
+        {
+            Size = 1;
+            index = 0;
+            array = new int[Size];
+        }
+
+        /// <summary>
+        /// Add new value to inner array
+        /// </summary>
+        /// <param name="value">next value to array</param>
+        public void Add(int value)
+        {
+            if (index == Size)
+            {
+                Resize();
+            }
+            array[index++] = value;
+        }
+
         /// <summary>
         /// <para>метод Inverse, возвращающий новый массив с измененными знаками у всех элементов массива 
         /// (старый массив, остается без изменений).</para>
@@ -119,6 +140,14 @@ namespace HomeWork
             }
         }
 
-
+        /// <summary>
+        /// <para>Resize inner array, add 1 to max Size</para>
+        /// </summary>
+        private void Resize()
+        {
+            int[] res = new int[Size + 1];
+            array.CopyTo(res,0);
+            Size++;
+        }
     }
 }

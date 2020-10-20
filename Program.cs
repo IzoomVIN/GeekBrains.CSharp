@@ -1,13 +1,15 @@
-﻿namespace HomeWork
+﻿using System;
+
+namespace HomeWork
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var hw = new Homework3();
+            int[] i = {6, 2, 9, -3, 6};
+            Console.Write(StaticArrayClass.NumberOfPairs(i));
 
-            //hw.WorkOfComplexClass();
-            hw.CustomSum();
+            Support.Pause();
         }
     }
 }
