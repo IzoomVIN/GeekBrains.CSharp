@@ -6,8 +6,11 @@ namespace HomeWork
     {
         static void Main(string[] args)
         {
-            int[] i = {6, 2, 9, -3, 6};
-            Console.Write(StaticArrayClass.NumberOfPairs(i));
+            String path = "C:\\Users\\Slava\\Desktop\\arr.txt";
+            foreach (int num in StaticArrayClass.ParseFromFile(path))
+            {
+                Console.Write(num + " ");
+            }
 
             Support.Pause();
         }

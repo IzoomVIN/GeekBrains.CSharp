@@ -147,6 +147,7 @@ namespace HomeWork
         {
             int[] res = new int[Size + 1];
             array.CopyTo(res,0);
+            array = res;
             Size++;
         }
     }
