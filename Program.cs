@@ -6,13 +6,26 @@ namespace HomeWork
     {
         static void Main(string[] args)
         {
-            String path = "C:\\Users\\Slava\\Desktop\\arr.txt";
-            foreach (int num in StaticArrayClass.ParseFromFile(path))
-            {
-                Console.Write(num + " ");
-            }
+            //Homework5.TestLogin();
 
-            Support.Pause();
+            //string test = "asdas abb, asdfs, aa, sad.";
+
+            //Message.WriteWordsWithLenghtLowN(test, 3);
+            //console.writeline("\n");
+            //console.writeline(message.getgreatestword(test));
+            //console.writeline("\n");
+            //console.writeline(message.getgreatestwordsstr(test));
+            //console.writeline("\n");
+            //Message.DeleteWordsEndCharFromText(ref test, 's');
+            //Console.WriteLine("\n");
+            //Console.WriteLine(test);
+            //Console.WriteLine("\n");
+            //Console.WriteLine(Message.CheckStrings("assd", "sads"));
+            //Console.WriteLine("\n");
+            //Console.WriteLine(Message.CheckStrings("assd", "dads"));
+
+            //Support.Pause();
+
         }
     }
 }
