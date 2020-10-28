@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyList.cs" />
     <Compile Include="Homework3.cs" />
     <Compile Include="Homework2.cs" />
+    <Compile Include="StaticArrayClass.cs" />
     <Compile Include="Support.cs" />
     <Compile Include="HomeWork1.cs" />
     <Compile Include="Program.cs" />

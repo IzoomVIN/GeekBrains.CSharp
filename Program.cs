@@ -1,13 +1,18 @@
-﻿namespace HomeWork
+﻿using System;
+
+namespace HomeWork
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var hw = new Homework3();
+            String path = "C:\\Users\\Slava\\Desktop\\arr.txt";
+            foreach (int num in StaticArrayClass.ParseFromFile(path))
+            {
+                Console.Write(num + " ");
+            }
 
-            //hw.WorkOfComplexClass();
-            hw.CustomSum();
+            Support.Pause();
         }
     }
 }
