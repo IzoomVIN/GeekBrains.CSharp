@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{74C6713C-F79F-4BEA-9065-9225CFE740E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework", "Homework\Homework.csproj", "{99CF6450-B0C6-4D99-8C75-F6F82F3473B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Games", "Games\Games.csproj", "{C54A094C-A2B5-4EF1-B376-46E031342EE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74C6713C-F79F-4BEA-9065-9225CFE740E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74C6713C-F79F-4BEA-9065-9225CFE740E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74C6713C-F79F-4BEA-9065-9225CFE740E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74C6713C-F79F-4BEA-9065-9225CFE740E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CF6450-B0C6-4D99-8C75-F6F82F3473B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CF6450-B0C6-4D99-8C75-F6F82F3473B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CF6450-B0C6-4D99-8C75-F6F82F3473B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CF6450-B0C6-4D99-8C75-F6F82F3473B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54A094C-A2B5-4EF1-B376-46E031342EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54A094C-A2B5-4EF1-B376-46E031342EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54A094C-A2B5-4EF1-B376-46E031342EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54A094C-A2B5-4EF1-B376-46E031342EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
