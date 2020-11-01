@@ -9,6 +9,28 @@ namespace HomeWork
     /// </summary>
     class Support
     {
+        public delegate double FuncAX(double a, double x);
+        public delegate double FuncX(double x);
+        public delegate double FuncArX(double[] x);
+        public delegate double FuncArXInterval(FuncArX f, double[] x, int start, int stop);
+
+        public static double FunkWithInterval(FuncArX f, double[] x, int start=0, int stop=0)
+        {
+            if ((start == 0 && stop == 0) || stop >= x.Length)
+            {
+                return f(x);
+            }
+            else
+            {
+                int[] ind = new int[start - stop + 1];
+                for (int i = 0, j = start; i < ind.Length; i++, j++)
+                {
+                    ind[i] = j;
+                }
+                return f((double[])x.GetValue(ind));
+            }
+        }
+
         public static long AskWeight()
         {
             Console.Write("Weight: ");

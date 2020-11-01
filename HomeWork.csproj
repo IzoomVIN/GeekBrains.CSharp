@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Message.cs" />
-    <Compile Include="Homework4.cs" />
-    <Compile Include="Homework5.cs" />
-    <Compile Include="MyList.cs" />
-    <Compile Include="Homework3.cs" />
-    <Compile Include="Homework2.cs" />
-    <Compile Include="StaticArrayClass.cs" />
-    <Compile Include="Support.cs" />
-    <Compile Include="HomeWork1.cs" />
+    <Compile Include="homeworks\HomeWork6.cs" />
+    <Compile Include="support\FunctionsThroughFile.cs" />
+    <Compile Include="support\Message.cs" />
+    <Compile Include="homeworks\Homework4.cs" />
+    <Compile Include="homeworks\Homework5.cs" />
+    <Compile Include="support\MyList.cs" />
+    <Compile Include="homeworks\Homework3.cs" />
+    <Compile Include="homeworks\Homework2.cs" />
+    <Compile Include="support\StaticArrayClass.cs" />
+    <Compile Include="support\Support.cs" />
+    <Compile Include="homeworks\HomeWork1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
