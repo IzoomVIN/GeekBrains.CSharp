@@ -1,27 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Games
 {
-    public partial class Form1 : Form
+
+    /// <summary>
+    /// «Удвоитель»
+    /// </summary>
+    public partial class Multiplier : BaseFormGame
     {
         int count, expect, num;
         Stack<int> stack;
 
-        public Form1()
+        public Multiplier()
         {
             InitializeComponent();
-            StartGame();
         }
 
-        private void StartGame()
+        
+        public override void StartGame()
         {
             Random rnd = new Random();
             stack = new Stack<int>();
@@ -45,14 +43,7 @@ namespace Games
         {
             if (num == expect)
             {
-                if (MessageBox.Show(this, "You WIN\n Start new game?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    StartGame();
-                }
-                else
-                {
-                    Close();
-                }
+                new MessageWindow(this, "WIN").Show();
             }
         }
 

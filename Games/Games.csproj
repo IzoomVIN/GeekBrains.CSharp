@@ -46,16 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BaseFormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseFormSupWind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuessTheNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuessTheNumber.Designer.cs">
+      <DependentUpon>GuessTheNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageWindow.Designer.cs">
+      <DependentUpon>MessageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multiplier.Designer.cs">
+      <DependentUpon>Multiplier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SayNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SayNumber.Designer.cs">
+      <DependentUpon>SayNumber.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GuessTheNumber.resx">
+      <DependentUpon>GuessTheNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageWindow.resx">
+      <DependentUpon>MessageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multiplier.resx">
+      <DependentUpon>Multiplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SayNumber.resx">
+      <DependentUpon>SayNumber.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

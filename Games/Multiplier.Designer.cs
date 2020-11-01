@@ -1,6 +1,6 @@
 ﻿namespace Games
 {
-    partial class Form1
+    partial class Multiplier
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -44,11 +44,11 @@
             // expectView
             // 
             this.expectView.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.expectView.Location = new System.Drawing.Point(10, 61);
-            this.expectView.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.expectView.Location = new System.Drawing.Point(24, 122);
+            this.expectView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
             this.expectView.Name = "expectView";
-            this.expectView.Padding = new System.Windows.Forms.Padding(5);
-            this.expectView.Size = new System.Drawing.Size(159, 82);
+            this.expectView.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.expectView.Size = new System.Drawing.Size(378, 164);
             this.expectView.TabIndex = 0;
             this.expectView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -56,21 +56,21 @@
             // 
             this.numberView.BackColor = System.Drawing.SystemColors.Control;
             this.numberView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numberView.Location = new System.Drawing.Point(10, 153);
-            this.numberView.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.numberView.Location = new System.Drawing.Point(24, 306);
+            this.numberView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
             this.numberView.Name = "numberView";
-            this.numberView.Padding = new System.Windows.Forms.Padding(5);
-            this.numberView.Size = new System.Drawing.Size(280, 127);
+            this.numberView.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.numberView.Size = new System.Drawing.Size(662, 252);
             this.numberView.TabIndex = 1;
             this.numberView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnAdd.Location = new System.Drawing.Point(9, 12);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAdd.Location = new System.Drawing.Point(21, 24);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(146, 57);
+            this.btnAdd.Size = new System.Drawing.Size(347, 114);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "+1";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -83,19 +83,21 @@
             this.buttonBox.Controls.Add(this.btnBack);
             this.buttonBox.Controls.Add(this.btnReset);
             this.buttonBox.Controls.Add(this.btnAdd);
-            this.buttonBox.Location = new System.Drawing.Point(303, 10);
+            this.buttonBox.Location = new System.Drawing.Point(720, 20);
+            this.buttonBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.buttonBox.Name = "buttonBox";
-            this.buttonBox.Size = new System.Drawing.Size(163, 270);
+            this.buttonBox.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.buttonBox.Size = new System.Drawing.Size(387, 540);
             this.buttonBox.TabIndex = 5;
             this.buttonBox.TabStop = false;
             // 
             // btnMult
             // 
             this.btnMult.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnMult.Location = new System.Drawing.Point(9, 79);
-            this.btnMult.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMult.Location = new System.Drawing.Point(21, 158);
+            this.btnMult.Margin = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(146, 54);
+            this.btnMult.Size = new System.Drawing.Size(347, 108);
             this.btnMult.TabIndex = 5;
             this.btnMult.Text = "X2";
             this.btnMult.UseVisualStyleBackColor = false;
@@ -104,10 +106,10 @@
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnBack.Location = new System.Drawing.Point(9, 143);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(5);
+            this.btnBack.Location = new System.Drawing.Point(21, 286);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(146, 54);
+            this.btnBack.Size = new System.Drawing.Size(347, 108);
             this.btnBack.TabIndex = 4;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -116,10 +118,10 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnReset.Location = new System.Drawing.Point(9, 207);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReset.Location = new System.Drawing.Point(21, 414);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(146, 55);
+            this.btnReset.Size = new System.Drawing.Size(347, 110);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -128,11 +130,11 @@
             // countText
             // 
             this.countText.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.countText.Location = new System.Drawing.Point(171, 10);
-            this.countText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.countText.Location = new System.Drawing.Point(406, 20);
+            this.countText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
             this.countText.Name = "countText";
-            this.countText.Padding = new System.Windows.Forms.Padding(5);
-            this.countText.Size = new System.Drawing.Size(119, 50);
+            this.countText.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.countText.Size = new System.Drawing.Size(283, 100);
             this.countText.TabIndex = 6;
             this.countText.Text = "count";
             this.countText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,40 +142,37 @@
             // countView
             // 
             this.countView.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.countView.Location = new System.Drawing.Point(171, 61);
-            this.countView.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.countView.Location = new System.Drawing.Point(406, 122);
+            this.countView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
             this.countView.Name = "countView";
-            this.countView.Padding = new System.Windows.Forms.Padding(5);
-            this.countView.Size = new System.Drawing.Size(119, 82);
+            this.countView.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.countView.Size = new System.Drawing.Size(283, 164);
             this.countView.TabIndex = 7;
             this.countView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // expectText
             // 
             this.expectText.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.expectText.Location = new System.Drawing.Point(10, 10);
-            this.expectText.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.expectText.Location = new System.Drawing.Point(24, 20);
+            this.expectText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 0);
             this.expectText.Name = "expectText";
-            this.expectText.Padding = new System.Windows.Forms.Padding(5);
-            this.expectText.Size = new System.Drawing.Size(159, 50);
+            this.expectText.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.expectText.Size = new System.Drawing.Size(378, 100);
             this.expectText.TabIndex = 8;
             this.expectText.Text = "expect";
             this.expectText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // Multiplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 292);
-            this.Font = new System.Drawing.Font("Ravie", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Controls.Add(this.expectText);
             this.Controls.Add(this.countView);
             this.Controls.Add(this.countText);
             this.Controls.Add(this.buttonBox);
             this.Controls.Add(this.numberView);
             this.Controls.Add(this.expectView);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "Multiplier";
             this.Text = "Game";
             this.buttonBox.ResumeLayout(false);
             this.ResumeLayout(false);
